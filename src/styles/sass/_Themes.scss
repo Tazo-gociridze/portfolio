@@ -1,0 +1,226 @@
+
+
+//RED-THEME -------------------->
+
+.red-theme{
+    .general-color{
+        color: $red;
+    }
+
+    .general-border-color{
+        border: $red;
+    }
+    .general-bg-color{
+        background-color: $red;
+    }
+
+    .logo-div{
+       &::before{
+           border-bottom: 5px solid $red;
+           border-left: 5px solid $red;
+       }
+   
+       &::after{
+           border-top: 5px solid $red;
+           border-right: 5px solid $red;
+       }
+   }
+
+   .avatar{
+    &::before{
+        border-left: 7px solid $red;
+        border-top: 7px solid $red;
+    }
+
+    &::after{
+        border-right: 7px solid $red;
+        border-bottom: 7px solid $red;
+    }
+}
+}
+
+//ORANGE-THEME -------------------->
+.orange-theme{
+    .general-color{
+        color: $orange;
+    }
+
+    .general-border-color{
+        border: $orange;
+    }
+    .general-bg-color{
+        background-color: $orange;
+    }
+
+    .logo-div{
+       &::before{
+           border-bottom: 5px solid $orange;
+           border-left: 5px solid $orange;
+       }
+   
+       &::after{
+           border-top: 5px solid $orange;
+           border-right: 5px solid $orange;
+       }
+   }
+
+   .avatar{
+    &::before{
+        border-left: 7px solid $orange;
+        border-top: 7px solid $orange;
+    }
+
+    &::after{
+        border-right: 7px solid $orange;
+        border-bottom: 7px solid $orange;
+    }
+}
+}
+
+//TEAL-THEME -------------------------->
+.teal-theme{
+    .general-color{
+        color: $teal;
+    }
+
+    .general-border-color{
+        border: $teal;
+    }
+    .general-bg-color{
+        background-color: $teal;
+    }
+
+    .logo-div{
+       &::before{
+           border-bottom: 5px solid $teal;
+           border-left: 5px solid $teal;
+       }
+   
+       &::after{
+           border-top: 5px solid $teal;
+           border-right: 5px solid $teal;
+       }
+   }
+
+   .avatar{
+    &::before{
+        border-left: 7px solid $teal;
+        border-top: 7px solid $teal;
+    }
+
+    &::after{
+        border-right: 7px solid $teal;
+        border-bottom: 7px solid $teal;
+    }
+}
+}
+
+//BLUE-THEME ----------------------------------->
+.blue-theme{
+    .general-color{
+        color: $blue;
+    }
+
+    .general-border-color{
+        border: $blue;
+    }
+    .general-bg-color{
+        background-color: $blue;
+    }
+
+    .logo-div{
+       &::before{
+           border-bottom: 5px solid $blue;
+           border-left: 5px solid $blue;
+       }
+   
+       &::after{
+           border-top: 5px solid $blue;
+           border-right: 5px solid $blue;
+       }
+   }
+
+   .avatar{
+    &::before{
+        border-left: 7px solid $blue;
+        border-top: 7px solid $blue;
+    }
+
+    &::after{
+        border-right: 7px solid $blue;
+        border-bottom: 7px solid $blue;
+    }
+}
+}
+
+//PINK-THEME------------------------->
+
+.pink-theme{
+    .general-color{
+        color: $pink;
+    }
+
+    .general-border-color{
+        border: $pink;
+    }
+    .general-bg-color{
+        background-color: $pink;
+    }
+
+    .logo-div{
+       &::before{
+           border-bottom: 5px solid $pink;
+           border-left: 5px solid $pink;
+       }
+   
+       &::after{
+           border-top: 5px solid $pink;
+           border-right: 5px solid $pink;
+       }
+   }
+
+   .avatar{
+    &::before{
+        border-left: 7px solid $pink;
+        border-top: 7px solid $pink;
+    }
+
+    &::after{
+        border-right: 7px solid $pink;
+        border-bottom: 7px solid $pink;
+    }
+}
+}
+
+
+    .dark-mode{
+        background-color: $dark-gray;
+        .text-color{
+            color: white;
+        }
+        .bg-color{
+            background-color: $dark-gray;
+        }
+        .sidebar-bg-color{
+            background-color: $gray;
+        }
+        .border-color{
+            border: 2px solid $gray;
+        }
+    }
+
+    .light-mode{
+        background-color: $dark-white;
+        .text-color{
+            color: $dark-gray;
+        }
+        .bg-color{
+            background-color: $dark-white;
+        }
+        .sidebar-bg-color{
+            background-color: $white;
+        }
+        .border-color{
+            border: 2px solid rgba(63, 63, 63, 0.062);
+        }
+    }

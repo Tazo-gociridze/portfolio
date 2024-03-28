@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './sass/root';
+@import './sass/Themes';
+@import './sass/Sidebar';
+@import './sass/About';
+@import './sass/Portfolio';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+
+    transition: all 0.3s !important;
+    overflow-x: hidden;
+    
+}
+
+.padding-left{
+    padding-left: 250px;
+}
+
+.general-color{
+    color: $general-color;
+}
+
+main{
+    height: 100svh;
+    transition: all 0.3s !important;
+}
+
+.clicker {
+    font-family: $clicker;
+}
+
+.poppins {
+    font-family: $poppins;
+}
+
+.translate{
+    transform: translateX(0px);
+    animation-name: translate;
+    animation-duration: .8s;
+}
+
+@keyframes translate {
+    0%{
+        transform: translateX(2000px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.avatar{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &::before{
+        content: '';
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+    }
+
+    &::after{
+        content: '';
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+    }
+
+    div{
+        width: 400px;
+        height: 540px;
+        background-image: url(/src/image/avatar.png);
+        background-size: 400px 540px;
+        background-position: start;
+    }
+}
+
+
+@media (max-width:1750px) {
+    .mainPage{
+        justify-content: center;
+        column-gap: 150px;
+    }
+    .mainPage__text{
+        width: 600px;
+    }
+}
+
+@media (max-width:1500px) {
+
+    .mainPage__text{
+        width: 550px;
+    }
+    .avatar{
+         width: 350px;
+         height: 490px;
+        div{
+            width: 350px;
+            height: 470px;
+            background-image: url(/src/image/avatar.png);
+            background-size: 350px 470px;
+        }
+    }
+}
+
+@media (max-width:1400px) {
+    .padding-left{ padding-left: 0px;}
+
+    .sideBar__icons{
+        color: white;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .mainPage{
+        justify-content: center;
+        gap: 100px;
+    }
+    .mainPage__text{
+        width: 450px;
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 25px;
+            }
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .avatar{
+        width: 250px;
+        height: 370px;
+       div{
+           width: 250px;
+           height: 340px;
+           background-image: url(/src/image/avatar.png);
+           background-size: 250px 340px;
+       }
+   }
+}
+
+@media (max-width:950px) {
+
+    .mainPage{
+        padding-top: 90px;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 110svh;
+    }
+    .mainPage__text{
+        order: 2;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .avatar{
+        width: 320px;
+        min-height: 480px;
+        order: 1;
+        div{
+            width: 320px;
+            height: 430px;
+            background-image: url(/src/image/avatar.png);
+            background-size: 320px 430px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    .mainPage__text{
+        width: 300px;
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .avatar{
+        width: 250px;
+        min-height: 300px;
+
+        &::before{
+            width: 60px;
+            height: 60px;
+            top: -20px;
+            left: -20px;
+        }
+
+        &::after{
+            width: 60px;
+            height: 60px;
+            bottom: -20px;
+            right: -20px;
+        }
+
+        div{
+            width: 250px;
+            height: 330px;
+            background-image: url(/src/image/avatar.png);
+            background-size: 250px 330px;
+        }
+    }
+}
+
+
+
+
+
+
